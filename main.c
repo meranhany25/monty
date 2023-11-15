@@ -1,5 +1,4 @@
 #include "monty.h"
-col_t col = {NULL, NULL, NULL};
 /**
 * main - Entry point of the Monty interpreter
 * @argc: Number of command-line arguments
