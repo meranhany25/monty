@@ -1,8 +1,9 @@
 #include "monty.h"
+
 /**
- * print_char - Prints the ASCII value.
- * @stack: Pointer to a pointer pointing to the top node of the stack.
- * @line_number: Integer representing the line number of the opcode.
+ * print_char - Prints the Ascii value.
+ * @stack: Pointer to a pointer pointing to top node of the stack.
+ * @line_number: Interger representing the line number of of the opcode.
  */
 void print_char(stack_t **stack, unsigned int line_number)
 {
@@ -19,10 +20,10 @@ void print_char(stack_t **stack, unsigned int line_number)
 
 /**
  * print_str - Prints a string.
- * @stack: Pointer to a pointer pointing to the top node of the stack.
- * @line_number: Integer representing the line number of the opcode.
+ * @stack: Pointer to a pointer pointing to top node of the stack.
+ * @ln: Interger representing the line number of of the opcode.
  */
-void print_str(stack_t **stack, __attribute__((unused)) unsigned int line_number)
+void print_str(stack_t **stack, __attribute__((unused))unsigned int ln)
 {
 	int ascii;
 	stack_t *tmp;
@@ -47,10 +48,10 @@ void print_str(stack_t **stack, __attribute__((unused)) unsigned int line_number
 
 /**
  * rotl - Rotates the first node of the stack to the bottom.
- * @stack: Pointer to a pointer pointing to the top node of the stack.
- * @line_number: Integer representing the line number of the opcode.
+ * @stack: Pointer to a pointer pointing to top node of the stack.
+ * @ln: Interger representing the line number of of the opcode.
  */
-void rotl(stack_t **stack, __attribute__((unused)) unsigned int line_number)
+void rotl(stack_t **stack, __attribute__((unused))unsigned int ln)
 {
 	stack_t *tmp;
 
@@ -68,12 +69,13 @@ void rotl(stack_t **stack, __attribute__((unused)) unsigned int line_number)
 	(*stack)->prev = NULL;
 }
 
+
 /**
  * rotr - Rotates the last node of the stack to the top.
- * @stack: Pointer to a pointer pointing to the top node of the stack.
- * @line_number: Integer representing the line number of the opcode.
+ * @stack: Pointer to a pointer pointing to top node of the stack.
+ * @ln: Interger representing the line number of of the opcode.
  */
-void rotr(stack_t **stack, __attribute__((unused)) unsigned int line_number)
+void rotr(stack_t **stack, __attribute__((unused))unsigned int ln)
 {
 	stack_t *tmp;
 
